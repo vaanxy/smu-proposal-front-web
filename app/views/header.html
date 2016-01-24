@@ -1,0 +1,44 @@
+<header class="main-header">
+    <a ui-sref="app" class="logo">
+        <span class="logo-mini"><b>SMU</b>提案</span>
+        <span class="logo-lg"><b>SMU</b>工会提案系统</span>
+    </a>
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+        <a class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a>
+                        <i class="fa fa-user"></i>
+                        <span>{{header.user.name}}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#login">
+                        <i class="fa fa-sign-out"></i>
+                        <span>退出</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a ui-sref="app">
+                        <i class="fa fa-home"></i>
+                        <span>返回主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.chpsw">
+                        <i class="fa fa-key"></i>
+                        <span>修改密码</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
